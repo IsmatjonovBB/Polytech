@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abramyan Tasks</title>
+</head>
+<body>
+    
+<button onclick="begin35()">Begin 35</button>
+<button onclick="begin36()">Begin 36</button>
+<button onclick="begin37()">Begin 37</button>
+<button onclick="begin38()">Begin 38</button>
+<button onclick="begin39()">Begin 39</button>
+<button onclick="begin40()">Begin 40</button>
+    
+<script>
+    const begin35 = () => {
+        let v1 = prompt("Суръти кишти:")
+        let v2 = prompt("Сураъти ҷараён:")
+        let t1 = prompt("Вақти тайъкардаи кишти дар оби ором:")
+        let t2 = prompt("Вақти тайъкардаи кишти дар дарё ба муқобили ҷараён:")
+
+        let s1 = v1 * t1
+        let s2 = (v1 - v2) * t2
+
+
+        let s = s1 + s2 
+        alert("S=" + s + "км")
+    }
+
+    const begin36 = () => {
+        
+    }
+
+    const begin37 = () => {
+        let v1 = prompt("Суръати автомобили 1-ум:")
+        let v2 = prompt("Суръати автомобили 2-ум:")
+        let s = prompt("Масофаи байни онҳо:")
+        let t = prompt("Вақти сарфшудва:")
+
+        let s1 = v1 * t
+        let s2 = v2 * t
+        let totalDistance = (Number(s) - Number(s2)) - Number(s1)
+        
+        alert("Масофа баъди " + t + " соат: " + totalDistance + "км")
+    }
+
+
+    const begin38 = () => {
+        let a = Number(prompt("A="))
+        let b = Number(prompt("B="))
+
+        let x = (-1 * b) / a
+
+        alert("X=" + x)
+    }
+
+    const begin39 = () => {
+        let a = Number(prompt("A="))
+        let b = Number(prompt("B="))
+        let c = Number(prompt("C="))
+
+        let d = b * b - 4 * a * c
+        let x1 = (-1 * b + Math.sqrt(d))/(2 * a)
+        let x2 = (-1 * b - Math.sqrt(d))/(2 * a)
+
+        alert("x1=" + x1 + "; x2=" + x2)
+    }
+
+    const begin40 = () => {
+        let a1 = Number(prompt("A1="))
+        let b1 = Number(prompt("B1="))
+        let c1 = Number(prompt("C1="))
+        let a2 = Number(prompt("A2="))
+        let b2 = Number(prompt("B2="))
+        let c2 = Number(prompt("C2="))
+
+        let d = a1 * b2 - a2 * b1
+
+        let x = (c1 * b2 - c2 * b1)/d
+        let y = (a1 * c2 - a2 * c1)/d
+
+        alert("x=" + x + "; y=" + y)
+    }
+</script>
+
+</body>
+</html>
